@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<div id="toast"></div>
+<body>
+
+    <div id="auth-container" class="container">
+        <h2 id="auth-title">Login</h2>
+        
+        <form id="auth-form">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit" id="auth-btn">Login</button>
+        </form>
+        
+        <p>
+            <span id="toggle-auth-text">Don't have an account?</span> 
+            <a href="#" id="toggle-auth-link">Sign up</a>
+        </p>
+        <p id="auth-message"></p>
+    </div>
+
+    <div id="dashboard-container" class="container hidden">
+        
+        <div class="header">
+            <h2>Welcome, <span id="user-display"></span>!</h2>
+            <button id="logout-btn">Logout</button>
+        </div>
+        
+        <form id="task-form">
+            <input type="text" id="task-input" placeholder="What do you need to do?" required>
+            <button type="submit">Add Task</button>
+        </form>
+
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="pending">Pending</button>
+            <button class="filter-btn" data-filter="completed">Completed</button>
+        </div>
+
+        <ul id="task-list"></ul>
+        <p class="footer">Made with ❤️ by <b>Akshat Sharma</b></p>
+        
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
