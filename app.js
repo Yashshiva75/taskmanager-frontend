@@ -2,7 +2,8 @@
 // Configuration & DOM Elements
 // ==========================================
 
-const API_URL = 'http://localhost:5000';
+// const API_URL = 'http://localhost:5000';
+const API_URL = 'https://task-manager-full-stack-2.onrender.com';
 
 const authContainer = document.getElementById('auth-container');
 const dashboardContainer = document.getElementById('dashboard-container');
